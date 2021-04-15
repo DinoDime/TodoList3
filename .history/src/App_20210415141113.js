@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from "react";
 import './App.css';
 import TodoForm from "./components/TodoForm";
-import TodoList from "./components/TodoList";
 
 const LOCAL_STORAGE_KEY = "react-todo-list-todos";
 
@@ -23,26 +22,12 @@ const App = () => {
     setTodos([todo, ...todos]);
   }
 
-  const toggleComplete = (id) => {
-    setTodos(
-      todos.map(todo => {
-        if (todo.id === id){
-          return {
-            ...todo,
-            completed: !todo.completed
-          };
-        }
-        return todo;
-      })
-    );
-  }
-
   return (
     <div className="App">
       <header className="App-header">
         <p>React Todo</p>
         <TodoForm addTodo={addTodo} />
-        <TodoForm addTodo={addTodo} toggleComplete={toggleComplete}/>
+        <TodoForm addTodo={addTodo} />
       </header>
     </div>
   );

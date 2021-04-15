@@ -42,7 +42,7 @@ const App = () => {
       <header className="App-header">
         <p>React Todo</p>
         <TodoForm addTodo={addTodo} />
-        <TodoForm addTodo={addTodo} toggleComplete={toggleComplete}/>
+        <TodoForm addTodo={addTodo} toggleComplete={}/>
       </header>
     </div>
   );

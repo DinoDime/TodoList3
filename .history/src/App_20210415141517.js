@@ -26,7 +26,7 @@ const App = () => {
   const toggleComplete = (id) => {
     setTodos(
       todos.map(todo => {
-        if (todo.id === id){
+        of (todo.id === id){
           return {
             ...todo,
             completed: !todo.completed
@@ -42,7 +42,7 @@ const App = () => {
       <header className="App-header">
         <p>React Todo</p>
         <TodoForm addTodo={addTodo} />
-        <TodoForm addTodo={addTodo} toggleComplete={toggleComplete}/>
+        <TodoForm addTodo={addTodo} />
       </header>
     </div>
   );
