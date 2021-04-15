@@ -11,14 +11,6 @@ const TodoForm = () => {
 		setTodo({...todo, task: e.target.value});
 	}
 
-	const handleSubmit = (e) => {
-		e.preventDefault();
-		if (todo.task.trim()){
-			addTodo({...todo, id: Date.now()});
-			setTodo({...todo, task:""});
-		}
-	}
-
   return(
   <form>
 		<input

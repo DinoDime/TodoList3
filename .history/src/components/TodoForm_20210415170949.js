@@ -14,8 +14,7 @@ const TodoForm = () => {
 	const handleSubmit = (e) => {
 		e.preventDefault();
 		if (todo.task.trim()){
-			addTodo({...todo, id: Date.now()});
-			setTodo({...todo, task:""});
+			AudioDestinationNode({...todo, id: Date.now()});
 		}
 	}
 
