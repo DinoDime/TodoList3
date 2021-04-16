@@ -6,13 +6,12 @@ const Todo = ({todo}) => {
 			<input type="checkbox"/>
 			<li
 				style={{
-					color: "wheat",
 					textDecoration: todo.completed ? "'line-through" : null
 				}}
 			>
-				{todo.task}
+			{todo.task}
 			</li>
-			<button>x</button>
+			<button>X</button>
 		</div>
   );
 }

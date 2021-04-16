@@ -2,7 +2,7 @@ import React from "react";
 
 const Todo = ({todo}) => {
   return(
-		<div>
+		<div style={{display: "flex"}}>
 			<input type="checkbox"/>
 			<li
 				style={{
@@ -12,7 +12,7 @@ const Todo = ({todo}) => {
 			>
 				{todo.task}
 			</li>
-			<button>x</button>
+			<button>X</button>
 		</div>
   );
 }

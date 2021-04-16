@@ -10,9 +10,9 @@ const Todo = ({todo}) => {
 					textDecoration: todo.completed ? "'line-through" : null
 				}}
 			>
-				{todo.task}
+			{todo.task}
 			</li>
-			<button>x</button>
+			<button>X</button>
 		</div>
   );
 }

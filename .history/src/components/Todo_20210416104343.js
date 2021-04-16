@@ -2,7 +2,7 @@ import React from "react";
 
 const Todo = ({todo}) => {
   return(
-		<div>
+		<div style={{display: "flex"}}>
 			<input type="checkbox"/>
 			<li
 				style={{
@@ -10,9 +10,9 @@ const Todo = ({todo}) => {
 					textDecoration: todo.completed ? "'line-through" : null
 				}}
 			>
-				{todo.task}
+			{todo.task}
 			</li>
-			<button>x</button>
+			<button>X</button>
 		</div>
   );
 }

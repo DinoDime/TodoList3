@@ -15,13 +15,12 @@ const TodoForm = () => {
 		e.preventDefault();
 		if (todo.task.trim()){
 			props.addTodo({...todo, id: Date.now()});
-			//reset the task input
 			setTodo({...todo, task:""});
 		}
 	}
 
   return(
-  <form onSubmit={handleSubmit}>
+  <form>
 		<input
 			name="task"
 			type="text"

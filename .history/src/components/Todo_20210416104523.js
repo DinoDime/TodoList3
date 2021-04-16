@@ -12,7 +12,7 @@ const Todo = ({todo}) => {
 			>
 				{todo.task}
 			</li>
-			<button>x</button>
+			<button>X</button>
 		</div>
   );
 }
